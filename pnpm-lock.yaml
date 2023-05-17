@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/node': ^20.1.7
   fastify: ^4.17.0
+  json-schema-to-ts: ^2.8.2
   ts-node: ^10.9.1
   typescript: ^5.0.4
 
@@ -11,10 +12,18 @@ dependencies:
 
 devDependencies:
   '@types/node': 20.1.7
+  json-schema-to-ts: 2.8.2
   ts-node: 10.9.1_vyxhtn3gmap2whkbnrz2avj22a
   typescript: 5.0.4
 
 packages:
+
+  /@babel/runtime/7.21.5:
+    resolution: {integrity: sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.11
+    dev: true
 
   /@cspotcode/source-map-support/0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -75,6 +84,10 @@ packages:
 
   /@tsconfig/node16/1.0.4:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
+    dev: true
+
+  /@types/json-schema/7.0.11:
+    resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
 
   /@types/node/20.1.7:
@@ -281,6 +294,15 @@ packages:
     engines: {node: '>= 0.10'}
     dev: false
 
+  /json-schema-to-ts/2.8.2:
+    resolution: {integrity: sha512-qyITu0FeIGLDMBaaAaMSWXSwpcgnuR5YEhNdLkD4nhCDrpjCKCJzO9pup99giDbzpGf5eX2o9OxCOe/29SaSbQ==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@types/json-schema': 7.0.11
+      ts-algebra: 1.2.0
+    dev: true
+
   /json-schema-traverse/1.0.0:
     resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
     dev: false
@@ -381,6 +403,10 @@ packages:
     engines: {node: '>= 12.13.0'}
     dev: false
 
+  /regenerator-runtime/0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+    dev: true
+
   /require-from-string/2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
@@ -448,6 +474,10 @@ packages:
     resolution: {integrity: sha512-iNgFugVuQgBKrqeO/mpiTTgmBsTP0WL6yeuLfLs/Ctf0pI/ixGqIRm8sDCwMcXGe9WWvt2sGXI5mNqZbValmJg==}
     engines: {node: '>=12'}
     dev: false
+
+  /ts-algebra/1.2.0:
+    resolution: {integrity: sha512-kMuJJd8B2N/swCvIvn1hIFcIOrLGbWl9m/J6O3kHx9VRaevh00nvgjPiEGaRee7DRaAczMYR2uwWvXU22VFltw==}
+    dev: true
 
   /ts-node/10.9.1_vyxhtn3gmap2whkbnrz2avj22a:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}

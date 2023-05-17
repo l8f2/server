@@ -1,9 +1,12 @@
 import fastify from 'fastify'
+import {schemas} from "./schemas";
 
 const server = fastify()
 
-server.get('/ping', async (request, reply) => {
-  return 'pong\n'
+server.post('/login', {
+  schema: schemas.user['/login'].schema
+}, (req, rep) => {
+
 })
 
 server.listen({ port: 8080 }, (err, address) => {
